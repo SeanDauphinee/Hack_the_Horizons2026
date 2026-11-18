@@ -1,0 +1,19 @@
+AFTER EVERY RECORDING - on the LAPTOP (prompt starts with dell-mech@)
+Paste one line at a time.
+
+1. See the run names on the Pi:
+ssh team14@10.171.250.85 "ls ~/runs"
+
+2. Set the run name (CHANGE to your run):
+RUN=run_20261111_151431_run
+
+3. Copy the run to the laptop:
+scp -r team14@10.171.250.85:~/runs/$RUN ~/Downloads/
+
+4. Process LTE + build combined.csv + check, ALL IN ONE LINE (choose ONE):
+
+   without a tower link:
+python3 ~/pi_daq/lte_process.py ~/Downloads/$RUN && python3 ~/pi_daq/merge_run.py ~/Downloads/$RUN && python3 ~/pi_daq/check_run.py ~/Downloads/$RUN
+
+   with a tower link (change 308=C5025 if needed):
+python3 ~/pi_daq/lte_process.py ~/Downloads/$RUN --link 308=C5025 && python3 ~/pi_daq/merge_run.py ~/Downloads/$RUN && python3 ~/pi_daq/check_run.py ~/Downloads/$RUN

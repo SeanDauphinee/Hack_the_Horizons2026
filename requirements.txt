@@ -1,0 +1,12 @@
+# Raspberry Pi (recording)
+numpy
+pyserial
+smbus2
+# LimeSDR: install SoapySDR + LimeSuite with setup_sdr.sh (apt: python3-soapysdr, soapysdr-module-lms7)
+
+# Laptop (processing)
+scipy
+matplotlib
+
+# Optional: LoRa node check (GPL-3.0)
+# meshtastic
