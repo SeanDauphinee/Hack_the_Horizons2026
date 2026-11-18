@@ -1,0 +1,7 @@
+cd ~
+git clone https://github.com/SeanDauphinee/Hack_the_Horizons2026.git
+cd Hack_the_Horizons2026
+unzip -o ~/Downloads/repo_update.zip
+git add README.md requirements.txt .gitignore LICENSE docs/
+git commit -m "Add README, docs, requirements, license"
+git push
