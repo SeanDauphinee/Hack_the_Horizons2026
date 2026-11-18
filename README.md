@@ -1,6 +1,6 @@
 # Hack the Horizons 2026 — Team 14
 
-**🏆 1st place, Honeywell × Carleton University "Hack the Horizons" hackathon (November 2026)**
+**1st place, Honeywell × Carleton University "Hack the Horizons" hackathon (November 2026)**
 Challenge 2: positioning and navigation when GPS is unavailable.
 
 Team 14: Tony Kairouz, Gabe Melendez, Tristan Laliberté, Sean Dauphinee, Tyler Laliberté
